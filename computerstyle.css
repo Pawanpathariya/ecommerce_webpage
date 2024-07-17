@@ -1,0 +1,245 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  width: 100vw;
+  background: url(banner.jpg);
+  opacity: 0.7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+header .checkbtn {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+header #check {
+  display: none;
+}
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+header ul li a {
+  color: white;
+  text-decoration: none;
+}
+header ul li a:hover {
+  color: yellow;
+}
+header #cart {
+  color: white;
+}
+
+#discount {
+  padding-top: 10%;
+  height: auto;
+  background: url(banner.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#discount .cont {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+#discount .cont h1 {
+  margin: 20px;
+  color: white;
+  font-size: 70px;
+}
+#discount .cont h2 {
+  margin: 20px;
+  color: white;
+  font-size: 40px;
+}
+#discount .cont a {
+  margin: 20px;
+  text-decoration: none;
+  width: 100%;
+  color: gray;
+  border: 2px solid gray;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#discount .cont a:hover {
+  background-color: gray;
+  color: white;
+}
+#discount .img {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#laptop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding-bottom: 100px;
+}
+#laptop .img {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+#laptop .img img {
+  height: 400px;
+}
+#laptop .cont {
+  align-items: center;
+  width: 400px;
+}
+#laptop .cont h1 {
+  font-size: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#laptop .cont p {
+  padding-bottom: 50px;
+}
+#laptop .cont a {
+  text-decoration: none;
+  color: white;
+  background-color: brown;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#laptop .cont a:hover {
+  background-color: black;
+}
+
+footer {
+  height: auto;
+  width: 100vw;
+  background: url(footer.jpg);
+  color: white;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  align-items: center;
+  justify-content: center;
+}
+footer h1 {
+  margin: 10px;
+}
+footer .icon {
+  width: 25%;
+  margin-right: 100px;
+  margin-left: 30px;
+}
+footer .icon .logo {
+  margin-bottom: 10%;
+}
+footer .icon .ic {
+  display: flex;
+  gap: 20px;
+}
+footer .about {
+  width: 25%;
+}
+footer .contact {
+  width: 25%;
+}
+footer .contact h1 {
+  margin-top: 5px;
+}
+footer .news {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-right: 100px;
+}
+footer .news input {
+  height: 30px;
+  width: 150px;
+  border-radius: 5px;
+}
+footer .news a {
+  text-decoration: none;
+  color: white;
+  width: 150px;
+  background-color: gray;
+  padding: 10px;
+}
+footer .news a:hover {
+  background-color: brown;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100vw;
+    padding-top: 0px;
+    align-items: flex-start;
+  }
+  header nav ul {
+    display: none;
+    flex-direction: column;
+  }
+  header #cart {
+    padding-top: 35px;
+  }
+  header .checkbtn {
+    display: block;
+    font-size: 30px;
+    margin-right: 10%;
+    padding-top: 30px;
+  }
+  header #check:checked ~ nav ul {
+    display: block;
+    padding-bottom: 150px;
+    gap: 20px;
+  }
+  header #check:checked ~ nav ul li {
+    padding: 10px;
+    position: relative;
+    top: 120px;
+  }
+  #discount {
+    flex-direction: column;
+  }
+  #laptop {
+    flex-direction: column;
+  }
+  footer {
+    height: auto;
+    grid-template-columns: auto auto;
+    padding-left: 100px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 430px) {
+  header {
+    width: 100vw;
+  }
+  #discount .img img {
+    height: 150px;
+  }
+  #laptop .cont {
+    padding-left: 20px;
+    text-align: center;
+  }
+  #laptop .img img {
+    height: 200px;
+  }
+  footer {
+    padding-top: 20px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=computerstyle.css.map */

@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  width: auto;
+  background: url(banner.jpg);
+  opacity: 0.7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+header .checkbtn {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+header #check {
+  display: none;
+}
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+header ul li a {
+  color: white;
+  text-decoration: none;
+}
+header ul li a:hover {
+  color: yellow;
+}
+header #cart {
+  color: white;
+}
+
+.banner {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  color: white;
+  line-height: 50px;
+}
+.banner .login {
+  background-color: white;
+  height: 350px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  padding: 20px;
+  border-radius: 20px;
+}
+.banner .login h3 {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+}
+.banner .login input {
+  height: 35px;
+  border-radius: 40px;
+  padding-left: 10px;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+}
+.banner .login .sign a {
+  background-color: rgb(131, 131, 227);
+  width: 260px;
+  height: 40px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.banner .login .sign a:hover {
+  background-color: black;
+}
+.banner .login a {
+  color: black;
+  text-decoration: none;
+}
+
+footer {
+  height: auto;
+  width: 100vw;
+  background: url(footer.jpg);
+  color: white;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  align-items: center;
+  justify-content: center;
+}
+footer h1 {
+  margin: 10px;
+}
+footer .icon {
+  width: 25%;
+  margin-right: 100px;
+  margin-left: 30px;
+}
+footer .icon .logo {
+  margin-bottom: 10%;
+}
+footer .icon .ic {
+  display: flex;
+  gap: 20px;
+}
+footer .about {
+  width: 25%;
+}
+footer .contact {
+  width: 25%;
+}
+footer .contact h1 {
+  margin-top: 5px;
+}
+footer .news {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-right: 100px;
+}
+footer .news input {
+  height: 30px;
+  width: 150px;
+  border-radius: 5px;
+}
+footer .news a {
+  text-decoration: none;
+  color: white;
+  width: 150px;
+  background-color: gray;
+  padding: 10px;
+}
+footer .news a:hover {
+  background-color: brown;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding-top: 0px;
+  }
+  header nav ul {
+    display: none;
+    flex-direction: column;
+  }
+  header .checkbtn {
+    display: block;
+    font-size: 30px;
+    margin-right: 10%;
+  }
+  header #check:checked ~ nav ul {
+    display: block;
+    padding-bottom: 150px;
+    gap: 20px;
+  }
+  header #check:checked ~ nav ul li {
+    padding: 10px;
+    position: relative;
+    top: 120px;
+  }
+  footer {
+    height: auto;
+    grid-template-columns: auto auto;
+    padding-left: 100px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 426px) {
+  header {
+    width: 100vw;
+  }
+  footer {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=loginstyle.css.map */

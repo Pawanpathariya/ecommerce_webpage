@@ -1,0 +1,253 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  position: fixed;
+  width: auto;
+  background: url(banner.jpg);
+  opacity: 0.7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+header .checkbtn {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+header #check {
+  display: none;
+}
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+header ul li a {
+  color: white;
+  text-decoration: none;
+}
+header ul li a:hover {
+  color: yellow;
+}
+header #cart {
+  color: white;
+}
+
+#product {
+  padding-top: 10%;
+  height: auto;
+  text-align: center;
+}
+#product h1 {
+  font-size: 40px;
+  margin-top: 20px;
+  -webkit-text-decoration: underline grey;
+          text-decoration: underline grey;
+}
+#product p {
+  padding: 10px;
+  font-size: 20px;
+}
+#product .product {
+  margin-top: 20%;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#product .product .pro1:hover img {
+  height: 250px;
+}
+#product .product .pro1:hover h2 {
+  font-size: 40px;
+}
+#product .product .pro2:hover img {
+  height: 250px;
+}
+#product .product .pro2:hover h2 {
+  font-size: 40px;
+}
+#product .product .pro3:hover img {
+  height: 250px;
+}
+#product .product .pro3:hover h2 {
+  font-size: 40px;
+}
+#product .product .pro4:hover img {
+  height: 250px;
+}
+#product .product .pro4:hover h2 {
+  font-size: 40px;
+}
+#product .product .pro5:hover img {
+  height: 250px;
+}
+#product .product .pro5:hover h2 {
+  font-size: 40px;
+}
+#product .product .pro6:hover img {
+  height: 250px;
+}
+#product .product .pro6:hover h2 {
+  font-size: 40px;
+}
+#product .product .pro7:hover img {
+  height: 250px;
+}
+#product .product .pro7:hover h2 {
+  font-size: 40px;
+}
+#product .product .pro8:hover img {
+  height: 250px;
+}
+#product .product .pro8:hover h2 {
+  font-size: 40px;
+}
+#product .product .pro9:hover img {
+  height: 250px;
+}
+#product .product .pro9:hover h2 {
+  font-size: 40px;
+}
+#product .bt {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+#product .bt #btn {
+  text-decoration: none;
+  color: gray;
+  border: 2px solid gray;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#product .bt #btn:hover {
+  background-color: gray;
+  color: white;
+}
+
+footer {
+  height: auto;
+  width: 100vw;
+  background: url(footer.jpg);
+  color: white;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  align-items: center;
+  justify-content: center;
+}
+footer h1 {
+  margin: 10px;
+}
+footer .icon {
+  width: 25%;
+  margin-right: 100px;
+  margin-left: 30px;
+}
+footer .icon .logo {
+  margin-bottom: 10%;
+}
+footer .icon .ic {
+  display: flex;
+  gap: 20px;
+}
+footer .about {
+  width: 25%;
+}
+footer .contact {
+  width: 25%;
+}
+footer .contact h1 {
+  margin-top: 5px;
+}
+footer .news {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-right: 100px;
+}
+footer .news input {
+  height: 30px;
+  width: 150px;
+  border-radius: 5px;
+}
+footer .news a {
+  text-decoration: none;
+  color: white;
+  width: 150px;
+  background-color: gray;
+  padding: 10px;
+}
+footer .news a:hover {
+  background-color: brown;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding-top: 0px;
+    align-items: flex-start;
+  }
+  header nav ul {
+    display: none;
+    flex-direction: column;
+  }
+  header #cart {
+    padding-top: 35px;
+  }
+  header .checkbtn {
+    display: block;
+    font-size: 30px;
+    margin-right: 10%;
+    padding: 30px;
+  }
+  header #check:checked ~ nav ul {
+    display: block;
+    padding-bottom: 150px;
+    gap: 20px;
+  }
+  header #check:checked ~ nav ul li {
+    padding: 10px;
+    position: relative;
+    top: 120px;
+  }
+  #product .product {
+    grid-template-columns: 1fr 1fr;
+  }
+  footer {
+    height: auto;
+    grid-template-columns: auto auto;
+    padding-left: 100px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 426px) {
+  header {
+    width: 100vw;
+  }
+  #product {
+    padding-top: 20%;
+  }
+  #product .product {
+    grid-template-columns: 1fr;
+  }
+  footer {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=productstyle.css.map */

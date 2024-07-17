@@ -1,0 +1,268 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background: url(banner.jpg);
+  opacity: 0.7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+header .checkbtn {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+header #check {
+  display: none;
+}
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+header ul li a {
+  color: white;
+  text-decoration: none;
+}
+header ul li a:hover {
+  color: yellow;
+}
+header #cart {
+  color: white;
+}
+
+#contactus {
+  background: url(banner.jpg) no-repeat;
+  height: auto;
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+#contactus ::-moz-placeholder {
+  color: white;
+  text-align: center;
+  padding-top: 10%;
+  font-size: 20px;
+}
+#contactus ::placeholder {
+  color: white;
+  text-align: center;
+  padding-top: 10%;
+  font-size: 20px;
+}
+#contactus .head {
+  display: flex;
+  width: 150px;
+  text-align: center;
+  align-items: center;
+}
+#contactus .head h1 {
+  font-size: 60px;
+  padding-bottom: 100px;
+  text-decoration: underline;
+}
+#contactus .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding-top: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+}
+#contactus .form #name {
+  border-color: white;
+  border-radius: 5px;
+  height: 40px;
+  width: 400px;
+  background-color: transparent;
+}
+#contactus .form #email {
+  border-color: white;
+  border-radius: 5px;
+  height: 40px;
+  width: 400px;
+  background-color: transparent;
+}
+#contactus .form #number {
+  border-color: white;
+  border-radius: 5px;
+  height: 40px;
+  width: 400px;
+  background-color: transparent;
+}
+#contactus .form #msg {
+  border-color: white;
+  border-radius: 5px;
+  height: 100px;
+  width: 400px;
+  background-color: transparent;
+}
+#contactus .form button {
+  background-color: gray;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+#contactus .form button:hover {
+  background-color: black;
+  color: white;
+}
+
+footer {
+  height: auto;
+  width: 100vw;
+  background: url(footer.jpg);
+  color: white;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  align-items: center;
+  justify-content: center;
+}
+footer h1 {
+  margin: 10px;
+}
+footer .icon {
+  width: 25%;
+  margin-right: 100px;
+  margin-left: 30px;
+}
+footer .icon .logo {
+  margin-bottom: 10%;
+}
+footer .icon .ic {
+  display: flex;
+  gap: 20px;
+}
+footer .about {
+  width: 25%;
+}
+footer .contact {
+  width: 25%;
+}
+footer .contact h1 {
+  margin-top: 5px;
+}
+footer .news {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-right: 100px;
+}
+footer .news input {
+  height: 30px;
+  width: 150px;
+  border-radius: 5px;
+}
+footer .news a {
+  text-decoration: none;
+  color: white;
+  width: 150px;
+  background-color: gray;
+  padding: 10px;
+}
+footer .news a:hover {
+  background-color: brown;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding-top: 0px;
+    align-items: start;
+  }
+  header nav ul {
+    display: none;
+    flex-direction: column;
+  }
+  header #cart {
+    padding-top: 35px;
+  }
+  header .checkbtn {
+    padding-top: 30px;
+    display: block;
+    font-size: 30px;
+    margin-right: 10%;
+  }
+  header #check:checked ~ nav ul {
+    display: block;
+    padding-bottom: 150px;
+    gap: 20px;
+  }
+  header #check:checked ~ nav ul li {
+    padding: 10px;
+    position: relative;
+    top: 120px;
+  }
+  #contactus {
+    padding-top: 10%;
+  }
+  #contactus ::-moz-placeholder {
+    padding-top: 8%;
+    font-size: 15px;
+  }
+  #contactus ::placeholder {
+    padding-top: 8%;
+    font-size: 15px;
+  }
+  footer {
+    height: auto;
+    grid-template-columns: auto auto;
+    padding-left: 100px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 426px) {
+  header {
+    width: 100vw;
+  }
+  #contactus {
+    padding-top: 30%;
+  }
+  #contactus .form #name {
+    width: 250px;
+  }
+  #contactus .form #email {
+    width: 250px;
+  }
+  #contactus .form #number {
+    width: 250px;
+  }
+  #contactus .form #msg {
+    width: 250px;
+  }
+  #contactus .form {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  footer {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=contactstyle.css.map */

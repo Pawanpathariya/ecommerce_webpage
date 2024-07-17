@@ -1,0 +1,203 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  width: auto;
+  align-items: center;
+  background: url(banner.jpg);
+  opacity: 0.7;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+header .checkbtn {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  padding-top: 30px;
+}
+header #check {
+  display: none;
+}
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+header ul li a {
+  color: white;
+  text-decoration: none;
+}
+header ul li a:hover {
+  color: yellow;
+}
+header #cart {
+  color: white;
+}
+
+.aboutus {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding-top: 200px;
+}
+.aboutus .cont {
+  width: 400px;
+  padding-bottom: 20px;
+}
+.aboutus .cont h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+.aboutus .cont p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.aboutus .cont a {
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: gray;
+}
+.aboutus .cont a:hover {
+  background-color: black;
+}
+.aboutus .img img {
+  height: 250px;
+}
+
+footer {
+  height: auto;
+  width: 100vw;
+  background: url(footer.jpg);
+  color: white;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  align-items: center;
+  justify-content: center;
+}
+footer h1 {
+  margin: 10px;
+}
+footer .icon {
+  width: 25%;
+  margin-right: 100px;
+  margin-left: 30px;
+}
+footer .icon .logo {
+  margin-bottom: 10%;
+}
+footer .icon .ic {
+  display: flex;
+  gap: 20px;
+}
+footer .about {
+  width: 25%;
+}
+footer .contact {
+  width: 25%;
+}
+footer .contact h1 {
+  margin-top: 5px;
+}
+footer .news {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-right: 100px;
+}
+footer .news input {
+  height: 30px;
+  width: 150px;
+  border-radius: 5px;
+}
+footer .news a {
+  text-decoration: none;
+  color: white;
+  width: 150px;
+  background-color: gray;
+  padding: 10px;
+}
+footer .news a:hover {
+  background-color: brown;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding-top: 0px;
+    align-items: start;
+  }
+  header nav ul {
+    display: none;
+    flex-direction: column;
+  }
+  header #cart {
+    padding-top: 35px;
+  }
+  header .checkbtn {
+    display: block;
+    font-size: 30px;
+    margin-right: 10%;
+  }
+  header #check:checked ~ nav ul {
+    display: block;
+    padding-bottom: 150px;
+    gap: 20px;
+  }
+  header #check:checked ~ nav ul li {
+    padding: 10px;
+    position: relative;
+    top: 120px;
+  }
+  .aboutus {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer {
+    height: auto;
+    grid-template-columns: auto auto;
+    padding-left: 100px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 426px) {
+  header {
+    width: 100vw;
+  }
+  .aboutus {
+    width: 300px;
+  }
+  .aboutus .cont {
+    padding-left: 40px;
+  }
+  .aboutus .cont h1 {
+    font-size: 40px;
+  }
+  .aboutus .cont p {
+    font-size: 15px;
+  }
+  .aboutus .img img {
+    padding-left: 40px;
+    text-align: center;
+    width: 100%;
+  }
+  footer {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=aboutstyle.css.map */
