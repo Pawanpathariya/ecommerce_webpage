@@ -57,7 +57,7 @@ body {
   height: 100%;
 }
 #hero .main .cont {
-  width: 400px;
+  width: 380px;
 }
 #hero .main .cont h1 {
   font-size: 80px;
@@ -79,8 +79,8 @@ body {
   padding: 10px;
   border: 3px solid white;
   margin: 10px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
   transition: all 1s ease;
 }
 #hero .main .cont #bt1:hover {
@@ -92,7 +92,7 @@ body {
   padding: 10px;
   border: 3px solid white;
   margin: 10px;
-  padding-left: 40px;
+  padding-left: 30px;
   padding-right: 30px;
   transition: all 1s ease;
 }
